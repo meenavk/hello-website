@@ -1,18 +1,18 @@
 .hero {
-  min-height: 80vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
+  padding: 60px 20px 30px;
 }
 
+/* MAIN LAYOUT */
 .hero-content {
   max-width: 900px;
+  margin: 0 auto;
+
   display: flex;
   align-items: center;
   gap: 25px;
 }
 
+/* PROFILE */
 .profile-img {
   width: 140px;
   height: 140px;
@@ -23,6 +23,7 @@
   box-shadow: 0 10px 25px rgba(0,0,0,0.4);
 }
 
+/* TEXT */
 .hero-text {
   display: flex;
   flex-direction: column;
@@ -39,6 +40,7 @@
   margin: 0 0 10px 0;
 }
 
+/* BUTTONS */
 .buttons a {
   display: inline-block;
   margin: 5px;
@@ -46,7 +48,20 @@
 
   background: white;
   color: #0b1220;
+
   border-radius: 25px;
   text-decoration: none;
   font-weight: bold;
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-text {
+    align-items: center;
+  }
 }
