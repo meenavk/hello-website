@@ -19,53 +19,6 @@ html {
   scroll-behavior: smooth;
 }
 
-/* NAVBAR */
-.navbar {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-
-  background: rgba(11, 18, 32, 0.85);
-  backdrop-filter: blur(10px);
-
-  border-bottom: 1px solid rgba(255,255,255,0.1);
-}
-
-.nav-container {
-  max-width: 1000px;
-  margin: auto;
-  padding: 12px 20px;
-
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.logo {
-  font-size: 18px;
-  font-weight: bold;
-  color: #38bdf8;
-}
-
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 18px;
-  margin: 0;
-  padding: 0;
-}
-
-.nav-links a {
-  text-decoration: none;
-  color: #e5e7eb;
-  font-size: 14px;
-  transition: 0.3s;
-}
-
-.nav-links a:hover {
-  color: #38bdf8;
-}
-
 /* HERO */
 .hero {
   padding: 60px 20px;
