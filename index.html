@@ -1,27 +1,116 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Vinod Meena Intro</title>
-  </head>
-  <body>
-    <div id="root"></div>
+<head>
+  <title>Vinod | Automation & Software Engineer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- React CDN -->
-    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
-    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
-    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0f172a;
+      color: white;
+    }
 
-    <script type="text/babel">
-      function App() {
-        return (
-          <div style={{ textAlign: "center", marginTop: "50px" }}>
-            <h1>Hello 👋 Vinod</h1>
-            <p>This is React running directly on GitHub Pages</p>
-          </div>
-        );
-      }
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 40px 20px;
+    }
 
-      ReactDOM.createRoot(document.getElementById("root")).render(<App />);
-    </script>
-  </body>
+    .hero {
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .hero h1 {
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      color: #94a3b8;
+    }
+
+    .card {
+      background: #1e293b;
+      padding: 20px;
+      margin: 20px 0;
+      border-radius: 12px;
+    }
+
+    h2 {
+      color: #38bdf8;
+    }
+
+    ul {
+      line-height: 1.8;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 40px;
+      color: #64748b;
+      font-size: 14px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <!-- HERO -->
+    <div class="hero">
+      <h1>Hi, I'm Vinod 👋</h1>
+      <p>Automation Engineer | PLC Developer | Python & Web Developer</p>
+    </div>
+
+    <!-- ABOUT -->
+    <div class="card">
+      <h2>About Me</h2>
+      <p>
+        I build industrial automation solutions using PLC systems and software tools.
+        I also develop Python-based analysis tools and modern web applications for engineering workflows.
+      </p>
+    </div>
+
+    <!-- SKILLS -->
+    <div class="card">
+      <h2>Skills</h2>
+      <ul>
+        <li>Rockwell Automation / RSLogix 5000</li>
+        <li>PLC Programming & Troubleshooting</li>
+        <li>Python (Automation & Data Processing)</li>
+        <li>React / Next.js Web Development</li>
+        <li>Industrial Data Analysis Tools</li>
+      </ul>
+    </div>
+
+    <!-- PROJECTS -->
+    <div class="card">
+      <h2>Projects</h2>
+      <ul>
+        <li>RSLogix XML Analyzer (AI-based ladder logic explanation)</li>
+        <li>Fault Mapping System for PLC diagnostics</li>
+        <li>Flow Scale Calculator (Industrial calculations tool)</li>
+        <li>Web dashboard for automation monitoring</li>
+      </ul>
+    </div>
+
+    <!-- CONTACT -->
+    <div class="card">
+      <h2>Contact</h2>
+      <p>GitHub: https://github.com/meenavk</p>
+      <p>LinkedIn: (add your link here)</p>
+    </div>
+
+    <div class="footer">
+      © 2026 Vinod | Built with GitHub Pages
+    </div>
+
+  </div>
+
+</body>
 </html>
