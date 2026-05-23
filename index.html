@@ -10,34 +10,50 @@
 
 <body>
 
-  <header class="hero">
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">Vinod</div>
 
-  <div class="hero-content">
-
-    <div class="profile-container">
-      <img src="Photo.jpg" alt="Profile Image" class="profile-img"/>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </div>
+  </nav>
 
-    <div class="hero-text">
-      <h1>Hi, I'm Vinod 👋</h1>
+  <!-- HERO -->
+  <header class="hero" id="home">
 
-      <p class="typing-text"></p>
+    <div class="hero-content">
 
-      <p class="subtitle">
-        Automation Engineer | PLC Developer | Python & Web Developer
-      </p>
-
-      <div class="buttons">
-        <a href="https://github.com/meenavk" target="_blank">GitHub</a>
-        <a href="#contact">Contact</a>
+      <div class="profile-container">
+        <img src="profile.jpg" alt="Profile Image" class="profile-img"/>
       </div>
+
+      <div class="hero-text">
+        <h1>Hi, I'm Vinod 👋</h1>
+
+        <p class="typing-text"></p>
+
+        <p class="subtitle">
+          Automation Engineer | PLC Developer | Python & Web Developer
+        </p>
+
+        <div class="buttons">
+          <a href="https://github.com/meenavk" target="_blank">GitHub</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+
     </div>
+  </header>
 
-  </div>
-
-</header>
-
-  <section class="card">
+  <!-- ABOUT -->
+  <section class="card" id="about">
     <h2>About Me</h2>
     <p>
       I design and develop industrial automation systems using PLCs and software tools.
@@ -46,8 +62,10 @@
     </p>
   </section>
 
-  <section class="card">
+  <!-- SKILLS -->
+  <section class="card" id="skills">
     <h2>Skills</h2>
+
     <div class="grid">
       <span>Rockwell / RSLogix 5000</span>
       <span>PLC Programming</span>
@@ -57,7 +75,8 @@
     </div>
   </section>
 
-  <section class="card">
+  <!-- PROJECTS -->
+  <section class="card" id="projects">
     <h2>Projects</h2>
 
     <div class="project">
@@ -74,9 +93,9 @@
       <h3>Flow Scale Calculator</h3>
       <p>Industrial process calculation and optimization tool.</p>
     </div>
-
   </section>
 
+  <!-- CONTACT -->
   <section class="card" id="contact">
     <h2>Contact</h2>
     <p>GitHub: https://github.com/meenavk</p>
