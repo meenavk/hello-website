@@ -1,43 +1,17 @@
-const texts = [
-  "Automation Engineer",
-  "PLC Programmer",
-  "Python Developer",
-  "Industrial Systems Builder",
-  "React & Web Developer"
-];
+const text = "Automation Engineer | PLC Developer | Python & Web Developer";
 
 let index = 0;
-let charIndex = 0;
-let isDeleting = false;
 
-function typeEffect() {
+function typeOnce() {
   const el = document.querySelector(".typing-text");
-
   if (!el) return;
 
-  const current = texts[index];
+  el.textContent = text.substring(0, index);
+  index++;
 
-  if (isDeleting) {
-    charIndex--;
-  } else {
-    charIndex++;
+  if (index <= text.length) {
+    setTimeout(typeOnce, 50); // typing speed
   }
-
-  el.textContent = current.substring(0, charIndex);
-
-  let speed = isDeleting ? 60 : 100;
-
-  if (!isDeleting && charIndex === current.length) {
-    speed = 1200;
-    isDeleting = true;
-  } 
-  else if (isDeleting && charIndex === 0) {
-    isDeleting = false;
-    index = (index + 1) % texts.length;
-    speed = 300;
-  }
-
-  setTimeout(typeEffect, speed);
 }
 
-typeEffect();
+typeOnce();
