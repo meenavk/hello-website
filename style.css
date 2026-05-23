@@ -25,6 +25,25 @@ body {
   transform: scale(1.05);
 }
 
+.typing-text {
+  font-size: 18px;
+  font-weight: 500;
+  color: #e5e7eb;
+  height: 25px;
+  margin: 10px 0;
+}
+
+.typing-text::after {
+  content: "|";
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
 /* HERO */
 .hero {
   text-align: center;
