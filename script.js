@@ -1,5 +1,3 @@
-console.log("Portfolio loaded successfully 🚀");
-
 const texts = [
   "Automation Engineer",
   "PLC Programmer",
@@ -10,15 +8,14 @@ const texts = [
 
 let index = 0;
 let charIndex = 0;
-let currentText = "";
 let isDeleting = false;
 
-function typeEffect() {
-  const typingElement = document.querySelector(".typing-text");
+function type() {
+  const el = document.querySelector(".typing-text");
 
-  if (!typingElement) return;
+  if (!el) return;
 
-  currentText = texts[index];
+  const current = texts[index];
 
   if (isDeleting) {
     charIndex--;
@@ -26,12 +23,12 @@ function typeEffect() {
     charIndex++;
   }
 
-  typingElement.textContent = currentText.substring(0, charIndex);
+  el.textContent = current.substring(0, charIndex);
 
   let speed = isDeleting ? 60 : 100;
 
-  if (!isDeleting && charIndex === currentText.length) {
-    speed = 1500;
+  if (!isDeleting && charIndex === current.length) {
+    speed = 1200;
     isDeleting = true;
   } 
   else if (isDeleting && charIndex === 0) {
@@ -40,7 +37,7 @@ function typeEffect() {
     speed = 300;
   }
 
-  setTimeout(typeEffect, speed);
+  setTimeout(type, speed);
 }
 
-typeEffect();
+type();
