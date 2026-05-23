@@ -5,67 +5,75 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Vinod | Automation Engineer</title>
 
-  <link rel="stylesheet" href="style.css"/>
+  <!-- CSS FILES -->
+  <link rel="stylesheet" href="css/base.css"/>
+  <link rel="stylesheet" href="css/hero.css"/>
+  <link rel="stylesheet" href="css/cards.css"/>
+  <link rel="stylesheet" href="css/animations.css"/>
+  <link rel="stylesheet" href="css/responsive.css"/>
 </head>
 
 <body>
 
   <!-- HERO -->
   <header class="hero">
+    <div class="hero-content fade-in">
 
-  <div class="hero-content fade-in">
+      <img src="profile.jpg" class="profile-img"/>
 
-    <img src="profile.jpg" class="profile-img"/>
+      <div class="hero-text">
 
-    <div class="hero-text">
+        <h1>Hi, I'm Vinod 👋</h1>
 
-      <h1>Hi, I'm Vinod 👋</h1>
+        <p class="typing-text"></p>
 
-      <p class="typing-text"></p>
+        <p class="subtitle">
+          Automation Engineer | PLC Developer | Python & Web Developer
+        </p>
 
-      <div class="buttons">
-        <a href="https://github.com/meenavk" target="_blank">GitHub</a>
-        <a href="#contact">Contact</a>
+        <div class="buttons">
+          <a href="https://github.com/meenavk" target="_blank">GitHub</a>
+          <a href="#contact">Contact</a>
+        </div>
+
       </div>
-
     </div>
+  </header>
 
-  </div>
-
-</header>
-
-  <!-- SECTIONS -->
+  <!-- ABOUT -->
   <section class="card fade-in">
     <h2>About Me</h2>
     <p>
       I design industrial automation systems using PLCs and software tools.
-      I build Python and web applications for RSLogix analysis and engineering workflows.
+      I build Python and web applications for RSLogix analysis and troubleshooting.
     </p>
   </section>
 
+  <!-- SKILLS -->
   <section class="card fade-in">
     <h2>Skills</h2>
 
     <div class="grid">
-      <span>Rockwell / RSLogix 5000</span>
+      <span>Rockwell / RSLogix</span>
       <span>PLC Programming</span>
       <span>Python Automation</span>
       <span>React / Next.js</span>
-      <span>Industrial Troubleshooting</span>
+      <span>Industrial Systems</span>
     </div>
   </section>
 
+  <!-- PROJECTS -->
   <section class="card fade-in">
     <h2>Projects</h2>
 
     <div class="project">
       <h3>RSLogix XML Analyzer</h3>
-      <p>Tool that explains PLC ladder logic from XML files.</p>
+      <p>Explains PLC ladder logic from XML files.</p>
     </div>
 
     <div class="project">
       <h3>Fault Mapping System</h3>
-      <p>Automated PLC fault diagnosis system.</p>
+      <p>Automated PLC troubleshooting system.</p>
     </div>
 
     <div class="project">
@@ -75,6 +83,7 @@
 
   </section>
 
+  <!-- CONTACT -->
   <section class="card fade-in" id="contact">
     <h2>Contact</h2>
     <p>GitHub: https://github.com/meenavk</p>
