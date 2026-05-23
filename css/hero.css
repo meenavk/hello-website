@@ -12,12 +12,12 @@
   gap: 25px;
 }
 
-/* PROFILE */
+/* IMAGE */
 .profile-img {
   width: 140px;
   height: 140px;
-
   border-radius: 50%;
+
   object-fit: cover;
 
   border: 3px solid rgba(255,255,255,0.9);
@@ -33,7 +33,12 @@
 .hero-text h1 {
   font-size: 28px;
   margin: 0 0 6px 0;
-  font-weight: 600;
+}
+
+.subtitle {
+  font-size: 15px;
+  opacity: 0.85;
+  margin: 0;
 }
 
 /* TYPING */
@@ -50,10 +55,4 @@
 
 @keyframes blink {
   50% { opacity: 0; }
-}
-
-.subtitle {
-  font-size: 15px;
-  opacity: 0.85;
-  margin: 0;
 }
