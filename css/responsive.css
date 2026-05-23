@@ -1,0 +1,14 @@
+@media (max-width: 600px) {
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-text {
+    align-items: center;
+  }
+
+  .subtitle {
+    max-width: 100%;
+  }
+}
