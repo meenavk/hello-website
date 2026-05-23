@@ -1,0 +1,52 @@
+.hero {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.hero-content {
+  max-width: 900px;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.profile-img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+
+  border: 3px solid white;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-text h1 {
+  font-size: 28px;
+  margin: 0 0 6px 0;
+}
+
+.subtitle {
+  font-size: 15px;
+  opacity: 0.85;
+  margin: 0 0 10px 0;
+}
+
+.buttons a {
+  display: inline-block;
+  margin: 5px;
+  padding: 10px 18px;
+
+  background: white;
+  color: #0b1220;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+}
